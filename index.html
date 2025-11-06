@@ -16,12 +16,17 @@
     align-items: flex-start;
   }
 
+  /* Wrapping container to move pole, ball, and cloth together */
+  .flag-container {
+    position: relative;
+    left: -30px; /* shift whole setup left */
+  }
+
   .flagpole {
     width: 20px;
     height: 100vh;
     background: #555;
     position: relative;
-    left: -30px; /* moved left for better center alignment */
   }
 
   /* Gold ball on top, lowered */
@@ -43,7 +48,7 @@
     height: 200px;
     position: absolute;
     top: 60px; /* lowered flag to match ball */
-    left: -10px; /* adjust with pole to center visually */
+    left: -10px; /* relative to container, visually centered with pole */
     border: 3px solid #000;
     background: repeating-linear-gradient(
       45deg,
@@ -75,37 +80,31 @@
 </style>
 </head>
 <body>
-  <div class="flagpole">
-    <div class="gold-ball"></div>
-    <div class="flag">
-      <!-- Fully repeated DFI text filling white areas, added more to fill completely -->
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+  <div class="flag-container">
+    <div class="flagpole">
+      <div class="gold-ball"></div>
+      <div class="flag">
+        <!-- Fully repeated DFI text filling white areas -->
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
 
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
 
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
 
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+        <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      </div>
     </div>
   </div>
 </body>
