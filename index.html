@@ -11,13 +11,15 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background: #f0f0f0;
   }
 
   .flag-container {
     position: relative;
-    left: -10px; /* slightly move the whole setup left */
+    display: flex;
+    align-items: flex-start; /* top align the flag within container */
   }
 
   .flagpole {
@@ -25,15 +27,12 @@
     height: 80vh; /* shorter pole */
     background: #555;
     position: relative;
-
-top: 20px;
-
     z-index: 2;
   }
 
   .gold-ball {
     position: absolute;
-    top: -2px;
+    top: -15px; /* slightly above the pole */
     left: 50%;
     transform: translateX(-50%);
     width: 30px;
@@ -48,8 +47,8 @@ top: 20px;
     width: 200px;
     height: 150px;
     position: absolute;
-    top: 50px;
-    left: 20px; /* move flag to the right to cover pole */
+    top: 50px;   /* distance from top of container */
+    left: 20px;  /* cover pole slightly */
     border: 3px solid #000;
     background: repeating-linear-gradient(
       45deg,
