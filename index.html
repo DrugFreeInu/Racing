@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smaller Rectangular Racing Flag with DFI & Gold Ball</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #87ceeb;
+    margin: 0;
+  }
 
+  .flagpole {
+    width: 10px;
+    height: 200px;
+    background: #555;
+    position: relative;
+  }
+
+  /* Gold ball on top */
+  .gold-ball {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: gold;
+    border-radius: 50%;
+    border: 2px solid #d4af37;
+    z-index: 2;
+  }
+
+  .flag {
+    width: 140px; /* slightly smaller width */
+    height: 90px; /* slightly smaller height */
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: 2px solid #000;
+    background: repeating-linear-gradient(
+      45deg,
+      black,
+      black 20px,
+      white 20px,
+      white 40px
+    );
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 6px;
+    color: black;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  .flag span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="flagpole">
+    <div class="gold-ball"></div>
+    <div class="flag">
+      <!-- Fully repeated DFI text filling white areas -->
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+
+      <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
+      <span>DFI</span><span>DFI</span><span>DFI</span>
+    </div>
+  </div>
+</body>
+</html>
