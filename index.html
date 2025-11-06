@@ -11,20 +11,20 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: center;     /* center vertically */
+    justify-content: center; /* center container horizontally */
+    align-items: center;     /* center container vertically */
     background: #f0f0f0;
   }
 
   .flag-container {
     position: relative;
     display: flex;
-    align-items: flex-start; /* top align the flag within container */
+    align-items: flex-start; /* align top edges of pole and flag */
   }
 
   .flagpole {
     width: 20px;
-    height: 80vh; /* shorter pole */
+    height: 60vh; /* shorter pole */
     background: #555;
     position: relative;
     z-index: 2;
@@ -47,8 +47,8 @@
     width: 200px;
     height: 150px;
     position: absolute;
-    top: 50px;   /* distance from top of container */
-    left: 20px;  /* cover pole slightly */
+    top: 40px;   /* vertical offset from top of pole */
+    left: 25px;  /* offset to the right of pole */
     border: 3px solid #000;
     background: repeating-linear-gradient(
       45deg,
@@ -81,6 +81,10 @@
 </head>
 <body>
   <div class="flag-container">
+    <div class="flagpole">
+      <div class="gold-ball"></div>
+    </div>
+
     <div class="flag">
       <!-- 100 spans for 10x10 grid -->
       <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
@@ -93,10 +97,6 @@
       <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
       <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
       <span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span><span>DFI</span>
-    </div>
-
-    <div class="flagpole">
-      <div class="gold-ball"></div>
     </div>
   </div>
 </body>
